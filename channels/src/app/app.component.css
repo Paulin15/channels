@@ -1,6 +1,8 @@
 .container {
-    position: relative; 
-    width: 100%;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
     background: #eee;
     display: inline-block;
     margin: 0 auto; /* Center it */
@@ -14,4 +16,17 @@
     color: #f1f1f1; /* Grey text */
     width: 100%; /* Full width */
     padding: 20px; /* Some padding */
+    overflow: hidden;
+  }
+
+  .container .fadeUp {
+    position: absolute; /* Position the background text */
+    top: 0; /* At the bottom. Use top:0 to append it to the top */
+    background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(0, 0, 0, 0); /* Black background with 0.5 opacity */
+    color: #f1f1f1; /* Grey text */
+    width: 100%; /* Full width */
+    padding-top: 250px; /* Some padding */
+    overflow: hidden;  
+    font-style: italic;
   }
