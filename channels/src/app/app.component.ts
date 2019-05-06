@@ -12,7 +12,14 @@ export class AppComponent {
   title = 'channels';
   currentState = 'initial';
   ngOnInit() {
-    AOS.init();
+    AOS.init({
+      offset: 200,
+      duration: 600,
+      easing: 'ease-out-back',
+      delay: 400,
+      once: true,
+      disable: 'mobile'
+  });
   }
 
 }
